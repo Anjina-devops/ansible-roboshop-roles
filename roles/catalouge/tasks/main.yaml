@@ -5,5 +5,5 @@
 
 - name: need to install nodejs
   ansible.builtin.import_role:
-    name: common
-    task_from: nodejs
+   name: common
+   task_from: nodejs
