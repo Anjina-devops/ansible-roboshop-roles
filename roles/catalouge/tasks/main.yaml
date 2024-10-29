@@ -3,7 +3,7 @@
 # common is also another role
 # I need to import a task nodejs.yaml in catalogue
 
-- name: need to install nodejs
+- name: Install NodeJS
   ansible.builtin.import_role:
-   name: common
-   task_from: nodejs
+    name: common
+    tasks_from: nodejs
