@@ -12,3 +12,18 @@
   ansible.builtin.import_role:
     name: common
     tasks_from: app-setup
+
+- name: install dependencies
+  ansible.builtin.command: npm install
+  args:
+    chdir: /app  
+
+- name: load mongo schema 
+  ansible.builtin.import.role:
+    name: common
+    tasks_from: load-mongo-schema
+
+- name: Setup application
+  ansible.builtin.import_role:
+    name: common
+    tasks_from: systemd-setup      
