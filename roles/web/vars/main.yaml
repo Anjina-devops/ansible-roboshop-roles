@@ -1,0 +1,5 @@
+CATALOGUE_HOST: catalogue.ammanni.shop
+USER_HOST: user.ammanni.shop
+SHIPPING_HOST: shipping.ammanni.shop
+CART_HOST: cart.ammanni.shop
+PAYMENT_HOST: payment.ammanni.shop
